@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CATEGORIAS</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  </head>
+  <body>
+
+    <div class="grid-container">
+      <div class="item1">
+        <h1>LOJA DE PRODUTOS</h1>
+      </div>
+      <div class="item2">PRODUTOS CADASTRADOS</div>
+
+      <div class="item3">ID</div>  
+      <div class="item4">CATEGORIA</div>
+      <div class="item5">NOME</div>
+      <div class="item6">DESCRIÇÃO</div>
+      <div class="item7">PREÇO</div>
+      <div class="item8">AÇÕES</div>  
+
+      <% if(categorias.length > 0){ categorias.forEach(categoria=> {%>
+        <div class="nome"><%=categoria.id%></div>
+        <div class="categoria"><%=categoria.categoria%></div>
+        <div class="nome"><%=categoria.nome%></div>
+        <div class="descricao"><%=categoria.descricao%></div>
+        <div class="preco"><%=categoria.preco%></div>
+        <div class="acao">acao</div>
+      <% })} else{ %>  
+        <div class="mensagem">Nenhuma categoria cadastrada.</div>
+      <% } %>
+        
+
+      <div class="rodape">
+        <a href="/">voltar</a>
+      </div>
+      
+    </div>
+
+  </body>
+</html>
