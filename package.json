@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/r7melo/LabWebUFC/issues"
   },
-  "homepage": "https://github.com/r7melo/LabWebUFC#readme"
+  "homepage": "https://github.com/r7melo/LabWebUFC#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
